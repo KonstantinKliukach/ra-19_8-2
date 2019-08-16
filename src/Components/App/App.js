@@ -11,10 +11,12 @@ const urls =[
 
 function App() {
   return (
-    urls.map( url => {
-      return <FetchUser url={url} />
-    })
-  );
+    <div className="app">
+      {urls.map( url => {
+        return <FetchUser url={url} />
+      })}
+    </div>
+  )
 }
 
 export default App;

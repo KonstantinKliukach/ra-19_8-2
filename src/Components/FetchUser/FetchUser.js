@@ -5,7 +5,7 @@ const FetchUser = ({ url }) => {
   const [{data, error, loading}] = useJsonFetch(url)
 
   return !loading?(
-    <div>
+    <div className='list'>
       <h1>{url}</h1>
       <ul>
         <li>{`Data: ${data}`}</li>
@@ -13,7 +13,7 @@ const FetchUser = ({ url }) => {
         <li>{`Error: ${error}`}</li>
       </ul>
     </div>
-  ) : <div>{'loading...'}</div>
+  ) : <div className='list'>{'loading...'}</div>
 }
 
 export default FetchUser
