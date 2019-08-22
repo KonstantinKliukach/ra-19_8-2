@@ -8,7 +8,7 @@ const FetchUser = ({ url }) => {
     <div className='list'>
       <h1>{url}</h1>
       <ul>
-        <li>{`Data: ${data}`}</li>
+        <li>{`Data: ${JSON.stringify(data)}`}</li>
         <li>{`Loading: ${loading}`}</li>
         <li>{`Error: ${error}`}</li>
       </ul>
